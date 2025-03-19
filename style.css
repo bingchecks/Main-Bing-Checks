@@ -75,20 +75,21 @@ body {
     padding: 2rem 1rem;
     height: calc(100dvh - 4rem);
     position: relative;
+    overflow: hidden;
 }
 .imgSide {
     display: none;
 }
 h2 {
     margin-bottom: .5rem;
-    font-size: clamp(1rem, calc(1vw + .1rem), 1.5rem);
-}
-h3 {
-    font-size: clamp(1rem, calc(1vw + .1rem), 1.2rem);
+    font-size: clamp(.8rem, calc(1vw + .1rem), 1.2rem);
 }
 h2 span{
     color:purple;
-    font-size: clamp(1.rem, calc(1vw + .1rem), 1.5rem);
+    font-size: clamp(1rem, calc(1vw + .1rem), 1.5rem);
+}
+h3 {
+    font-size: clamp(.8rem, calc(1vw + .1rem), 1.2rem);
 }
 .logo {
     position: absolute;
@@ -149,9 +150,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;;
-
-    
+    z-index: 100;
 }
 .headerLogo {
     width: 60px;
@@ -167,6 +166,17 @@ h1 {
 }                                                                                                                                                       
 .timeNumber {
     font-size: clamp(1rem, calc(2vw + 1rem), 3rem);
+}
+.otherSide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .subInfo {
@@ -252,8 +262,8 @@ h1 {
             justify-content: center;
             padding: 40px;
             background: #ffffff;
+            padding: 40px 80px;
                     /* White background */
-                    text-align: center;
                 }    
     .logo {
         display: none;
@@ -271,10 +281,6 @@ h1 {
         height: 100dvh;
         padding: 0;
         
-    }
-    .otherSide {
-        padding: 40px 80px;
-        overflow: hidden;
     }
     .subInfo {
         font-size: 1rem;
