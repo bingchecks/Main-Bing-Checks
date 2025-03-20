@@ -83,7 +83,7 @@ body {
     justify-content: center;
     width: 100%;
     padding: 2rem 1rem;
-    height: calc(100dvh - 4rem);
+    /* height: calc(100dvh - 4rem); */
     position: relative;
     overflow: hidden;
 }
