@@ -99,7 +99,8 @@ h2 span{
     color:var(--special-color);
 }
 h3 {
-    font-size: clamp(.8rem, calc(1vw + .1rem), 1.2rem);
+    font-size: clamp(1.05rem, calc(1.2vw + .1rem), 1.5rem);
+    /* text-align: left; */
 }
 .logo {
     position: absolute;
