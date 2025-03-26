@@ -7,11 +7,12 @@
 }
 
 :root {
-    --primary-color: #32243e;
+    --primary-color: #7B1FA2;
     --secondary-color: #210c2e;
     --tertiary-color: #3d183d;
     --quaternary-color: #f4f4f4;
     --quinary-color: #ffffff;
+    --special-color: rgb(123, 31, 162);
     --primary-font: 'Space Grotesk', sans-serif;
     --secondary-font: 'DM Sans', sans-serif;
 }
@@ -92,11 +93,10 @@ body {
 }
 h2 {
     margin-bottom: .5rem;
-    font-size: clamp(.8rem, calc(1vw + .1rem), 1.2rem);
+    font-size: clamp(1.2rem, calc(2vw + .1rem), 3rem);
 }
 h2 span{
-    color:purple;
-    font-size: clamp(1rem, calc(1vw + .1rem), 1.5rem);
+    color:var(--special-color);
 }
 h3 {
     font-size: clamp(.8rem, calc(1vw + .1rem), 1.2rem);
@@ -125,6 +125,7 @@ h1 {
     font-size: clamp(5rem, calc(9vw + 1rem), 7rem);
     line-height: clamp(4rem, calc(9vw + 1rem), 6rem);
     margin: 2rem 0;
+    color: var(--special-color);
 }
 
 .countdown {
@@ -204,21 +205,30 @@ h1 {
 }
 
 .subscribe input {
-    padding: 10px;
+    padding: min(1rem, 2vw);
     width: 70%;
     height: 3rem;
     border-radius: 5px;
     outline: none;
     color: black;
     font-size: 1rem;
-    border-radius: 1px solid rgba(0, 0, 0, 0.5);
-    
+    border: 1px solid var(--tertiary-color);
 }
-
+.subscribe input:focus {
+    border: 2px solid var(--special-color);
+    box-shadow: 0 0 5px rgba(123,
+        31,
+        162, .5);
+}
+.subscribe input::placeholder {
+    color: #bbb;
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
 .subscribe button {
     padding: 10px 20px;
     border: none;
-    background: #6a5acd;
+    background: var(--special-color);
     color: white;
     border-radius: 5px;
     height: 3rem;

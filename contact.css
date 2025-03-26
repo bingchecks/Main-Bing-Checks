@@ -62,12 +62,12 @@
     display: inline-block;
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #6a5acd;
+    color: var(--special-color);
     transition: color 0.3s ease-in-out;
 }
 
 .social-icon:hover {
-    color: #7867e6;
+    color: var(--tertiary-color);
 }
 
 /* Contact Image */
