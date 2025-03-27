@@ -5,14 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
-    --primary-color: #7B1FA2;
+    --special-color: rgb(123, 31, 162);
+    --primary-color: #32243e;
     --secondary-color: #210c2e;
     --tertiary-color: #3d183d;
     --quaternary-color: #f4f4f4;
     --quinary-color: #ffffff;
-    --special-color: rgb(123, 31, 162);
     --primary-font: 'Space Grotesk', sans-serif;
     --secondary-font: 'DM Sans', sans-serif;
 }
@@ -123,10 +122,12 @@ h3 {
 }
 
 h1 {
-    font-size: clamp(5rem, calc(9vw + 1rem), 7rem);
-    line-height: clamp(4rem, calc(9vw + 1rem), 6rem);
-    margin: 2rem 0;
+    font-size: clamp(5.5rem, calc(11vw + 1rem), 10rem);
+    line-height: clamp(4rem, calc(9vw + 1rem),8rem);
+    font-family: var(--secondary-font);
+    margin: clamp(1rem, 1.5vw, 2rem) 0;
     color: var(--special-color);
+    font-weight: 900;
 }
 
 .countdown {
@@ -177,7 +178,7 @@ h1 {
     opacity: 0.7;
 }                                                                                                                                                       
 .timeNumber {
-    font-size: clamp(1rem, calc(2vw + 1rem), 3rem);
+    font-size: clamp(2rem, calc(2vw + 1rem), 5rem);
 }
 .otherSide {
     width: 100%;
@@ -188,12 +189,13 @@ h1 {
     padding: 40px;
     background: #ffffff;
     padding: 40px 20px;
-    text-align: center;
+    /* text-align: left; */
 }
 
 .subInfo {
-    font-size: 1rem;
+    font-size: clamp(1rem, calc(1.2vw + .5rem), 2rem);
     margin-top: 10px;
+    width: 100%;
 }
 .subscribe {
     margin-top: 1rem;
@@ -263,20 +265,20 @@ h1 {
 @media screen and (min-width: 1024px) {
     .time {
         min-width: 100px;
+        aspect-ratio: 10/5;
         gap: 10px;
         flex-direction: row;
-        align-items: baseline;
-        
+        align-items: last baseline;        
     }
     .imgSide {
             display: block;
-            width: 50%;
+            width: 40%;
             height: 100%;
             background: #f4f4f4;
             /* Light gray background for contrast */
         }
         .otherSide {
-            width: 50%;
+            width: 60%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -284,8 +286,22 @@ h1 {
             padding: 40px;
             background: #ffffff;
             padding: 40px 80px;
+            text-align: left;
                     /* White background */
-                }    
+                }
+    .countdown {
+            justify-content: flex-start;
+    }
+    .subscribe {
+            justify-content: flex-start;
+    }
+    .timeNumber {
+        font-family: var(--secondary-font);
+            font-weight: 800;
+    }
+    h2 {
+        width: 100%;
+    }
     .logo {
         display: none;
     }
@@ -303,11 +319,19 @@ h1 {
         padding: 0;
         
     }
-    .subInfo {
-        font-size: 1rem;
-    }
     .subscribe input, .subscribe button {
-        height: 4rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+        /* text-transform: uppercase; */
+    }
+    .subscribe input {
+        border: 2px solid var(--special-color);
+    }
+    .aboutCover {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

@@ -1,12 +1,5 @@
-:root {
-    --primary-color: #32243e;
-    --secondary-color: #210c2e;
-    --tertiary-color: #3d183d;
-    --quaternary-color: #f4f4f4;
-    --quinary-color: #ffffff;
-    --primary-font: 'Space Grotesk', sans-serif;
-    --secondary-font: 'DM Sans', sans-serif;
-}
+@import url(style.css);
+
 .contact-section {
     width: 100%;
     max-width: 1440px;
@@ -32,6 +25,7 @@
 .contact-info h2 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin-bottom: 1rem;
+    color: var(--special-color);
 }
 
 .contact-info p {

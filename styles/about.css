@@ -1,3 +1,4 @@
+@import url(style.css);
 .aboutCover {
     width: 100%;
     background-color: var(--secondary-color);
@@ -62,6 +63,7 @@
     color: rgba(255, 255, 255, 0.1);
     z-index: 0;
 }
+
 .dmsans {
     font-family: "DM Sans", sans-serif;
 }
