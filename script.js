@@ -1,5 +1,5 @@
 // Set the target date to 45 days from now
-const targetDate = new Date("2025/06/01");
+const targetDate = new Date("2025/06/28");
 const form = document.querySelector("form");
 const inputEmail = document.querySelector("form.subscribe .email");
 const sidebarButton = document.querySelectorAll(".sidebarButton a");
